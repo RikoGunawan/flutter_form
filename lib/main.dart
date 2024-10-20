@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart'; // Pastikan kamu mengimpor HomeScreen
+import 'package:myapp/form_screen.dart';
+// import 'home_screen.dart'; // Pastikan kamu mengimpor HomeScreen
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(), // HomeScreen dijadikan sebagai halaman utama
+      home: const FormScreen(), // HomeScreen dijadikan sebagai halaman utama
     );
   }
 }

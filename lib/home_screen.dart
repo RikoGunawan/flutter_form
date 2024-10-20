@@ -22,24 +22,55 @@ class HomeScreen extends StatelessWidget {
                       margin: const EdgeInsets.all(16),
                       padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
                       color: Colors.blue,
-                      child: const Text('Hello world'),
                       width: 100,
                       height: 50,
                       alignment: Alignment.bottomCenter,
+                      child: const Text('Hello world'),
                     ),
                   ),
                 );
               }),
         ],
       ),
-      // body: Row(children: [
-      //   Expanded(
-      //     child: Container(
-      //       color: Colors.red,
-      //       // width: 50, //sudah tidak perlu karena Expended jadi lebarnya semaksimal mungkin
-      //       // height: 100,
-      //     ),
-      //   ),
+      body: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          Container(
+            color: Colors.black,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.yellow,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.red,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.black,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.yellow,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.red,
+            width: 100,
+            height: 100,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
       //   Flexible(
       //     flex: 10,
       //     child: Container(
@@ -54,44 +85,42 @@ class HomeScreen extends StatelessWidget {
       //   ),
       // ])
 
-      body: Column(children: [
-        Flexible(
-          child: Container(
-              color: Colors.black,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      alignment: Alignment.center,
-                      child: const Text(
-                        'Selamat datang',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.green,
-                    ),
-                  ),
-                ],
-              )),
-        ),
-        Expanded(
-          child: Container(
-            color: Colors.deepPurple,
-          ),
-        ),
-        Flexible(
-          child: Container(
-            color: Colors.teal,
-          ),
-        ),
-      ]),
-    );
-  }
-}
+      // body: Column(
+      //     children: [
+      //       Flexible(
+      //         child: Container(
+      //             color: Colors.black,
+      //             child: Row(
+      //               children: [
+      //                 Expanded(
+      //                   child: Container(
+      //                     alignment: Alignment.center,
+      //                     child: const Text(
+      //                       'Selamat datang',
+      //                       style: TextStyle(
+      //                         fontSize: 24,
+      //                         fontWeight: FontWeight.bold,
+      //                         color: Colors.white,
+      //                       ),
+      //                     ),
+      //                   ),
+      //                 ),
+      //                 Expanded(
+      //                   child: Container(
+      //                     color: Colors.green,
+      //                   ),
+      //                 ),
+      //               ],
+      //             )),
+      //       ),
+      //       Expanded(
+      //         child: Container(
+      //           color: Colors.deepPurple,
+      //         ),
+      //       ),
+      //       Flexible(
+      //         child: Container(
+      //           color: Colors.teal,
+      //         ),
+      //       ),
+      //     ]),
